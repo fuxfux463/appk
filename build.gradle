@@ -7,14 +7,13 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath name: 'gradle-2.3.3' // sem .jar
     }
 }
 
 allprojects {
     repositories {
-        flatDir {
-            dirs 'libs'
-        }
+        jcenter()
+        mavenCentral()
     }
 }
