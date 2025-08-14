@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
 
       - name: 🔑 Permissão ao Gradlew
-        run: chmod +x AhMyth-Client/gradlew
+        run: chmod +x gradlew
 
       - name: 🛠️ Compilar APK
         run: cd AhMyth-Client && ./gradlew assembleDebug
